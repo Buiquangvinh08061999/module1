@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nhap diem sinh vien Vat ly, Hoa hoc, Sinh</h1>
+    <button type="button" onclick="show();">Click de kiem tra</button>
+</body>
+<script>
+    function show(){
+      let VatLy = parseInt(prompt("Diem vat ly"))
+      let HoaHoc = parseInt(prompt("Diem hoa hoc"))
+      let SinhHoc = parseInt(prompt("Diem sinh hoc"))
+
+      let ALL = (VatLy+HoaHoc+SinhHoc)/3
+      document.write("Diem trung binh 3 mon:  " + ALL)
+    }
+
+
+
+
+</script>
+</html>
