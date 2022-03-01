@@ -1,3 +1,2 @@
-function show(){
-    alert('xin chao');
-}
+let a = 7
+console.log(a);
