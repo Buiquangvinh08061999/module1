@@ -7,21 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Bai 3 </h1>
-    <button type="button" onclick="show();">Kiem tra a va b</button>
+    
     
 </body>
 <script>
-    function show(){
-
-        let a= parseInt(prompt("Nhap a"))
-        let b= parseInt(prompt("Nhap b"))
-        if(a%b == 0){
-            alert('a la boi so cua b ')
-        }
-        else{
-            alert('a khong phai la boi so cua b')
-        }
+    a= Number.prompt("Nhập biến a: ")
+    b= Number.prompt("Nhập biến b: ")
+    if(a%b == 0){
+        alert('A chia hết cho B')
+    }else{
+        alert("A không chia hết cho B")
     }
+    
 </script>
 </html>
