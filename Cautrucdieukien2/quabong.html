@@ -11,7 +11,7 @@
       <img id="myImage" src="imger/qua bong.jpg" style="width: 150px;">
       <p>Click button below to move the image to rigth</p>
       <input type="button" value="Click me rigth" onclick="moveRight();"/>
-      <input type="button" value="Click me left" onclick="moveRight();"/>
+      <input type="button" value="Click me left" onclick="moveLeft();"/>
     </form>
 </body>
 <script>
@@ -24,6 +24,9 @@
     }
     function moveRight(){
         imObj.style.left = parseInt(imObj.style.left) +10+ 'px';
+    }
+    function moveLeft(){
+        imObj.style.left = parseInt(imObj.style.left) -10+ 'px';
     }
     
     
