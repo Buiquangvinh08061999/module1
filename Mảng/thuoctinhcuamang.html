@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    //Bai 1: car.push(): Xuất giá trị ra cuối mảng. "SH: cuối mảng"3"
+    // let car =["Toyota","Subaru","BWM"];
+    // car.push("SH")
+    // console.log(car[3])  // xuất "SH"
+
+    //Bai 2: car.unshift():Xuất giá trị ra đầu mảng. "SH: đầu mảng"0" 
+    // let car =["Toyota","Subaru","BWM"];
+    // car.unshift("Lambokini")
+    // console.log(car[0])
+    
+
+    //Bai3: car.pop():Xóa phần tử cuối cùng của mảng : "BWM biến mất"
+    // let car =["Toyota","Subaru","BWM"];
+    // car.pop()
+    // console.log(car[2]);
+
+    // Bai4: car.pop():Xóa phần tử đầu tiên của mảng : "Toyota biến mất", "Subaru thành "0"
+    // let car =["Toyota","Subaru","BWM"];
+    // car.shift()
+    // console.log(car[1]);
+    
+
+    // Bai 5: car.sort():Sắp xếp theo thứ tự. "A" là số 1, "B" số 2. tiếp đến trong 24chữ cái. 
+    // let car =["Toyota","Subaru","BWM"];
+    // car.sort()
+    // console.log(car);
+
+
+    //Bai 6: car.reverse(): Đảo ngược phần tử lại :["BWM","Subaru","Toyota"]
+    // let car =["Toyota","Subaru","BWM"];
+    // car.reverse()
+    // console.log(car);
+
+    //Bai 7: Dùng sort(). theo quy tắc trên sẽ trả về thứ tự nhỏ đến lớn
+    let soThuTu = [10,0,1,2,3,30,20];
+    soThuTu.sort(function(a,b){
+     
+        if(a<b) return -1;
+});
+        console.log(soThuTu);
+
+  
+ 
+
+</script>
+</html>
