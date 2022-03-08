@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Bài này giúp ta gọi đến 2 lệnh: thứ nhất myfunction();; thứ hai ("demo") 
+         Khi gọi lại "myfunction()" thực hiện thay đổi tên id="demo" Kich vao" thành "Nhập đúng cám ơn bạn"
+         Xem hướng dẫn cụ thể ở bài dưới. -->
+    <h2>Demo Java</h2>
+    <p id="demo">Kich vao</p>
+    <button type="button" onclick="myfunction()" >Click Me</button>
+</body>
+<script>
+    function myfunction(){
+        document.getElementById("demo").innerHTML ="Nhập đúng cám ơn bạn";
+    }
+</script>
+</html>

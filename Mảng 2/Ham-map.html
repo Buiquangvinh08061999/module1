@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Bài 1: Dùng hàm (map) để thay đổi thuộc tính của id:1...
+    let hoTen=[
+        {
+            id:1,
+            name:"Vinh",
+            size:"42"
+        },
+        {
+            id:2,
+            name:"Quang",
+            size:"15"
+        }
+    ]
+    let tatca =hoTen.map(function(hoTen){
+
+        if(hoTen.id == 1){
+            hoTen.name="Top"
+            hoTen.size="50"
+        }
+        return hoTen;
+    });
+    console.log(tatca);
+
+
+</script>
+</html>
