@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let a = parseInt(prompt("Nhập vào điểm kiểm tra(0-->10): " ));
+    let b = parseInt(prompt("Nhập vào điểm thi giữa kì(0-->10): ")); 
+    let c = parseInt(prompt("Nhập vào điểm thi cuối kì(0-->10): "));
+    let tong= (a+(b*2)+(c*3))/6;
+    
+    if(tong >=0 &&  tong < 5){
+        alert("Học sinh yếu tổng:" + tong+ " điểm");
+    }else if (tong >=5 && tong < 6.5 ){
+        alert("Học sinh trung bình tổng: " +tong+ " điểm");
+    }else if (tong >=6.5 && tong <8){
+        alert("Học sinh Khá tổng: "+tong+ " điểm");
+    }else if( tong >=8 && tong <9){
+        alert("Học sinh giỏi tổng: "+tong+ " điểm");
+    }else if (tong >= 9 && tong <=10){
+        alert("Học sinh xuất xắc tổng: " + tong+ " điểm");
+    }else{
+        alert("Nhập sai cú pháp ");
+    }
+   
+
+
+</script>
+</html>

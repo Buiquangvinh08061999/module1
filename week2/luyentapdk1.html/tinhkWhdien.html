@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let kWh = parseFloat(prompt("Nhập vào số kWh đã sài :"))
+    
+    if(kWh >=0 && kWh<=50){
+        alert("Giá tiền điện tháng này là: " + kWh * 1678 + " nghìn đồng")
+    }else if(kWh>=51 && kWh<=100){
+        alert("Giá tiền điện tháng này là: " + kWh * 1734 + " ngìn đồng")
+    }
+    else if(kWh>=101 && kWh<=200){
+        alert("Giá tiền điện tháng này là: " + kWh * 2014 + " ngìn đồng")
+    }
+    else if(kWh>=201 && kWh<=300){
+        alert("Giá tiền điện tháng này là: " + kWh * 2536 + " ngìn đồng")
+    }
+    else if(kWh>=301 && kWh<=400){
+        alert("Giá tiền điện tháng này là: " + kWh * 2836 + " ngìn đồng")
+    }else{
+        alert("Quá số điện quy định của nhà nước vui lòng nộp phạt 2 lít:")
+    }
+
+    
+
+</script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let soPhut = parseFloat(prompt("Nhập số phút đã gọi: "))
+
+    if(soPhut>0 && soPhut<=10){
+        alert("Cước phí phải thanh toán trong " +soPhut+ " phút là:"  + soPhut*1600 + " VNĐ")
+    }else if(soPhut >10 && soPhut <=20){
+        alert("Cước phí phải thanh toán trong " +soPhut+ " phút là:"  + soPhut*1900 + " VNĐ")
+    }else{
+        alert("Bạn đã nói quá nhiều")
+    }
+</script>
+</html>
