@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let thuNhap =parseFloat(prompt("Nhập tiền lương/năm của bạn là (triệu VNĐ) :"));
+
+    let thueThuNhap1 = thuNhap*0.02  //20%
+    let thueThuNhap2 = thuNhap*0.03  //30% 
+    let thueThuNhap3 = thuNhap*0.04  //40%
+    let thueThuNhap4 = thuNhap*0.05  //50%
+
+    if (thuNhap >=50000000 && thuNhap<=100000000){
+        alert("Tiền thuế bạn phải đóng là: " + thueThuNhap1 +"VNĐ")
+    }else if(thuNhap>100000000 && thuNhap <=200000000){
+        alert("Tiền thuế bạn phải đóng là: " + thueThuNhap2 +"VNĐ")
+    }
+    else if(thuNhap>200000000 && thuNhap <=300000000){
+        alert("Tiền thuế bạn phải đóng là: " + thueThuNhap3 +"VNĐ")
+    }
+    else {
+        alert("Tiền thuế bạn phải đóng là: " + thueThuNhap4 +"VNĐ")
+    }
+
+  
+   
+
+</script>
+</html>

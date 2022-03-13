@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let a = parseFloat(prompt("Nhập số tiền gửi là:(Triệu VNĐ) : "))
+    let b = parseFloat(prompt("Nhập vào % lãi xuất hàng tháng(từ 1% đến 100%) của ngân hàng là: : "))
+    let c = parseFloat(prompt("Nhập số tháng gửi(từ tháng 1-->12) là: "))
+    let soTienLai = ((a/100) * b)*c;
+
+    if(a < 0 && b <0 && c <0){
+        alert("Nhập vào một số nguyên và lớn hơn 0")
+    }else{
+        alert("Số tiền lãi là: " +soTienLai+ "VNĐ")
+    }
+    
+
+   
+
+
+
+
+
+</script>
+</html>
