@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let thuNhap =parseFloat(prompt("Nhập tiền lương tháng này:"))
+  
+    if(thuNhap<=6000000){
+        alert("Miễn thuế vì thu nhập bằng hoặc dưới 6.000.000VNĐ")
+    }else if(thuNhap>6000000 && thuNhap <=9000000){
+        alert("Tiền thuế phải đóng là: " + thuNhap*0.02+"VNĐ")
+    }else if(thuNhap>9000000 && thuNhap <=12000000){
+        alert("Tiền thuế phải đóng là: " + thuNhap*0.03 + "VNĐ")
+    }else{
+        alert("Tiền thuế phải đóng là: " + thuNhap*0.45 +"VNĐ")
+    }
+
+</script>
+</html>

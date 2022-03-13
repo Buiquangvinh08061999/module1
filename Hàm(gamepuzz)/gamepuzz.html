@@ -9,37 +9,46 @@
 </head>
 
 <body>
+    
     <img src=".//image/4.jpg" onclick="demo(1)" id="anh1">
     <img src=".//image/3.jpg" onclick="demo(2)" id="anh2">
     <img src=".//image/2.jpg" onclick="demo(3)" id="anh3">
     <img src=".//image/1.jpg" onclick="demo(4)" id="anh4">
+    <img src=".//image/5.jpg" onclick="demo(5)"id="anh5">
+    
 </body>
 <script>
+    
     function demo(stt) {
         if (stt == 1) {
             let _Anh = document.getElementById("anh1");
-            let sothuTu = Math.floor(Math.random() * 4) + 1;
+            let sothuTu = Math.floor(Math.random() * 10) + 1;
             let image = ".//image/" + sothuTu + ".jpg";
             _Anh.src = image;
 
         } else if (stt == 2) {
             let _Anh = document.getElementById("anh2");
-            let sothuTu = Math.floor(Math.random() * 4) + 1;
+            let sothuTu = Math.floor(Math.random() * 10) + 1;
             let image = ".//image/" + sothuTu + ".jpg";
             _Anh.src = image;
 
         } else if (stt == 3) {
             let _Anh = document.getElementById("anh3");
-            let sothuTu = Math.floor(Math.random() * 4) + 1;
+            let sothuTu = Math.floor(Math.random() * 10) + 1;
             let image = ".//image/" + sothuTu + ".jpg";
             _Anh.src = image;
 
-        } else {
+        } else if(stt==4){
             let _Anh = document.getElementById("anh4");
-            let sothuTu = Math.floor(Math.random() * 4) + 1;
+            let sothuTu = Math.floor(Math.random() * 10) + 1;
             let image = ".//image/" + sothuTu + ".jpg";
             _Anh.src = image;
-
+       
+        } else{
+            let _Anh = document.getElementById("anh5");
+            let sothuTu = Math.floor(Math.random() * 10) + 1;
+            let image = ".//image/" + sothuTu + ".jpg";
+            _Anh.src = image;
         }
 
     }

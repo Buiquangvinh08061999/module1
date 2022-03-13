@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let a = parseInt(prompt("Nhập số a"));
+    let b = parseInt(prompt("Nhập số b"));
+    let c = parseInt(prompt("Nhập số c"));
+    let delta = b*b - 4*a*c;
+
+    if(isNaN(a) || isNaN(b) || isNaN(c)){
+        alert("Nhập vào số")
+
+    }else if(delta <0){
+        alert("Phương trình vô nghiệm")  
+          
+    }else if (delta==0){
+        x= -b/(2*a)
+        alert("Phương trình có ngiệm kép là x1 = "+"x2 =" +x)
+   
+    }else if(delta>0){
+        x1 = ( -b + Math.sqrt(delta))/ (2*a)
+        x2 = ( -b - Math.sqrt(delta))/ (2*a)
+        alert("Phương trình có hai nghiệm phân biệt là x1 = " + x1 + " và x2 = " + x2)
+    }
+
+    
+
+
+
+
+
+
+
+</script>
+</html>
