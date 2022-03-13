@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nhập nhiệt độ</h1>
+</body>
+<script>
+   // Dùng lệnh isNaN để kiểm tra 1 số nhập vào.
+   
+   do{
+        nhapNhietDo = parseInt(prompt("Nhập nhiệt độ: "));
+        
+
+    }while(isNaN(nhapNhietDo))
+
+    if(nhapNhietDo>100){
+        alert("Giảm nhiệt độ")
+
+    }else if(nhapNhietDo<20){
+        alert("Tăng nhiệt độ")
+
+    }else{
+        alert("Nhập đúng ")
+    }
+    
+
+
+
+
+</script>
+</html>
