@@ -10,13 +10,18 @@
     
 </body>
 <script>
-    // Đảo ngược phần tử trong mảng
-    let a = [1,2,3,4,5,6,7];
-    a.sort(function(){
-        return -1;
-    })
-    console.log(a);
+    var n1 = 0;
+    var n2 = 1;
+    var resul = "0 1 ";
+    for(var i =2; i<18;i++){
+        
+        var tam = n2;
+        n2 = n1+n2;
+        n1 = tam;
+    
+    }
+    console.log(resul)
 
-
+   
 </script>
 </html>
