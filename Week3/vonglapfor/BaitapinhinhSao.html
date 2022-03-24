@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <button onclick="tinhgiaithua()">Bài tính giai thừa</button>
+    <button onclick="daysofibo()">Bài fibonachi</button>
    <button onclick="INhinhngang()">Bài 1 In Hình Ngang</button>
    <button onclick="INhinhdaucong()">Bài 2 In dấu cộng </button>
    <button onclick="INhinhchunhat()"> Bài 3 In Hình chữ nhật</button>
@@ -18,9 +20,40 @@
    <button onclick="INhinhsaonguoc1den5()">Bài 7 In Sao Ngược 1 đến 5</button>
    <button onclick="INhinhsaonguoc5den1()">Bài 7 In Sao Ngược 5 đến 1</button>
    
+   
   
     <script>
-    
+        function tinhgiaithua(){
+            let so= Number(prompt("Nhập vào 1 số:"))
+            let giaithua=1;
+            if(so==0 || so == 1){
+                giaithua=1
+            }else if(so<0){
+                alert("Không có giai thừa ")
+            }else{
+                for(let i = 1; i<=so;i++){
+                    giaithua = giaithua*i
+                }
+                alert("Giai thừa của "+ so + " = "+giaithua)
+            }
+        }
+
+    function daysofibo(){
+        let number = parseInt(prompt("Nhập vào số lượng fibonacci"))
+
+        let res = "0 1";
+        let fibo = 0;
+        let n1 = 0;
+        let n2 = 1;
+        for (let i = 1; i <= number; i++) {
+            fibo = n1 + n2;
+            res = res + " " + fibo;
+            n1 = n2;
+            n2 = fibo;
+        }
+        alert("Dãy số Fibonacci là:" + res);
+    }
+
         function INhinhngang(){
            let a = "<table border='1' width='300' cellspacing='0' cellpadding='3'>" ;
 
