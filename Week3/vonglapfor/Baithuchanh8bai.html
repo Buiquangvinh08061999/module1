@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="demo1()">Bài 1</button>
+    <button onclick="demo2()">Bài 2</button>
+    <button onclick="demo3()">Bài 3</button>
+    <button onclick="demo4()">Bài 4</button>
+    <button onclick="demo5()">Bài 5</button>
+    <button onclick="demo6()">Bài 6</button>
+    <button onclick="demo7()">Bài 7</button>
+    <button onclick="demo8()">Bài 8</button>
+</body>
+<script>
+    //
+    function demo1() {
+        for (let i = 10; i <= 100; i++) {
+            document.write(i + "</br>")
+            if (i == 99) {
+                document.write("Đã hoàn thành" + i)
+                break;
+            }
+        }
+    }
+    //
+    function demo2() {
+        let nhapNhietDo = parseFloat(prompt("Nhập nhiệt độ C"));
+        while (nhapNhietDo > 100 || nhapNhietDo < 20) {
+            if (nhapNhietDo > 100) {
+                alert("Nhiệt độ nóng giảm nhiệt độ")
+                nhapNhietDo = parseFloat(prompt("Nhập nhiệt độ"))
+            } else if (nhapNhietDo < 20) {
+                alert("Nhiệt độ lạnh tăng nhiệt độ")
+                nhapNhietDo = parseFloat(prompt("Nhập nhiệt độ"))
+            }
+        }
+        alert("Nhiệt độ bình thường");
+    }
+
+    //Chương trình in ra 
+    function demo7() {
+
+        for (let i = 1; i <= 100; i++) {
+
+            if (i % 3 == 0 && i % 5 == 0) {
+                document.write(i + " Fizz Buzz <br>")
+            } else if (i % 3 == 0) {
+                document.write(i + " Fizz <br>")
+            } else if (i % 5 == 0) {
+                document.write(i + " Buzz <br>")
+            }
+        }
+    }
+
+    //Hiển thị ra 20 số trong dãy fibonacci đầu tiên. 
+    function demo3() {
+        let number = parseInt(prompt("Nhập vào số lượng fibonacci"))
+
+        let res = "0 1";
+        let fibo = 0;
+        let n1 = 0;
+        let n2 = 1;
+        for (let i = 1; i <= number; i++) {
+            fibo = n1 + n2;
+            res = res + " " + fibo;
+            n1 = n2;
+            n2 = fibo;
+        }
+        alert("Dãy số Fibonacci là:" + res);
+    }
+
+
+    // Tìm số đầu tiên trong dãy fibonacci chia hết cho 5.
+     function demo4() {
+        let F = 0 , F0= 0, F1=0
+        let chia5 = ""
+        let fibonacci = "";
+        for (let i=0; i<20;i++){
+            if(i==0){
+                F=1
+                F1=1
+                fibonacci += F+ " "
+            }else{
+                F= F0+F1
+                F0 = F1
+                F1 = F
+                fibonacci += F+ " "
+                console.log(i +" = "+F)
+                if(F%5==0){
+                    chia5 = F
+                    break
+                }
+            }
+        }
+        console.log("Sô chia hết cho 5 trong dãy là "+chia5);
+    }
+
+     function demo5() {
+        let F = 0 , F0= 0, F1=0
+        let tong =0;
+        let fibonacci = "";
+        for (let i=0; i<20;i++){
+            if(i==0){
+                F=1
+                F1=1
+                fibonacci += F+ " "
+                tong+=F
+            }else{
+                F= F0+F1
+                F0 = F1
+                F1 = F
+                fibonacci += F+ " "
+                tong+=F
+                console.log(i +" = "+F)       
+                }
+            }
+        console.log("Dãy Fibonacci là "+fibonacci+"<br>");
+        console.log("Tổng của các số = "+tong)
+        }
+       
+    
+
+
+    //Tính tổng 30 số đầu tiên chia hết cho 7
+    function demo6() {
+        let tong = 0;
+        let count = 0;
+        let i = 0;
+        while (true) {
+            if (i % 7 == 0) {
+                console.log("Các số chia hết cho 7 là:" + i);
+                count++                        //điều kiện này tránh lặp vô hạn
+                tong = tong + i;               //điều kiện này để tính tổng số i
+            }
+            if (count == 30) break;    // điều kiện tìm 30 số chia hết cho 7 thì dừng.
+            i++;         
+        }
+        
+        console.log("Tổng các số chia hết cho 7 là :" + tong);
+    }
+</script>
+
+</html>

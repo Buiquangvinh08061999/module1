@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table >
+            <tr>
+                <td colspan="4" id="box">Rgba(100,50,50,0.5)</td>
+            </tr>
+            <tr>
+                <td>Red</td>
+                <td>Green</td>
+                <td>Blue</td>
+                <td>Alpha</td>
+            </tr>
+            <tr>
+                <td><input oninput="myColor()" type="range" id="Red" min="0" max="255" ></td>
+                <td><input oninput="myColor()" type="range" id="Green" min="0" max="255" ></td>
+                <td><input oninput="myColor()" type="range" id="Blue" min="0" max="255" ></td>
+                <td><input oninput="myColor()" type="range" id="Alpha" min="0" max="100" ></td>
+            </tr>
+            <tr>
+                <td id="result"></td>
+                <td id="result"></td>
+                <td id="result"></td>
+                <td id="result"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script>
+    function myColor(){
+        let Red = document.getElementById("red").value
+        let Green = document.getElementById("green").value
+        let Blue = document.getElementById("Blue").value
+        let Alpha = document.getElementById("Alpha").value
+        // console.log(red.value , Green.value , Blue.value , Alpha.value);
+    }
+    let show_value =`Rgba(${Red},${Green},50,0.5)`;
+</script>
+</html>

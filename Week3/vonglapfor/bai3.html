@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // let tong = 0
+    // let n1=0; 
+    // let n2=1;
+    // let resul ="0 1"
+    // for(let i=1; i<20;i++){
+    //     let tam = n2;
+    //     n2= n1+ n2
+    //     if(n2 % 5 == 0){
+    //         console.log("Số nguyên tố đầu tiên chia hết cho 5:" + n2);
+    //         tong= tong +n2;
+    //     }
+    //     n1=tam;
+    //     resul=resul + " " + n2 + " " ;
+    // }
+    // console.log(resul)
+    // console.log("Tổng các số chia hết cho 5 " + tong);
+
+
+    //Tổng 3 số đầu tiên chia hết cho 5:
+    // let tong = 0
+    // let count = 0
+    // let n1=0; 
+    // let n2=1;
+    // let resul ="0 1"
+    // for(let i=1; i<20;i++){
+    //     let tam = n2;
+    //     n2= n1+ n2
+    //     if(n2 % 5 == 0){
+    //         console.log("Số nguyên tố đầu tiên chia hết cho 5:" + n2);
+    //         tong= tong +n2;
+    //         count++;
+    //         if(count==3){
+    //             break;
+    //         }
+    //     }
+    //     n1=tam;
+    //     resul=resul + " " + n2 + " " ;
+    // }
+    // console.log(resul)
+    // console.log("Tổng các số chia hết cho 5 " + tong);
+
+
+    // let count = 0, tong =0
+    
+
+    //Tổng 30 số chia hết cho 7.
+    // let tong=0;
+    // let count =0;
+    // for (let i=0; ;i++){
+    //     if(i%7==0){
+    //         console.log("Các số chia hết cho 7 là:" + i )
+    //         count++
+    //         tong = tong +i; 
+    //     }
+    //     if(count==30) break  
+    // }
+    //  console.log("Tổng các số chia hết cho 7 là :" + tong);
+
+
+
+    let tong=0;
+    let count =0;
+    let i = 0;
+    while(true){
+            i++;
+            if(i%7==0){
+            console.log("Các số chia hết cho 7 là:" + i );
+            count++                       //điều kiện này tránh lặp vô hạn
+            tong = tong +i;               //điều kiện nà tính tổng 30 số i
+           } 
+              if(count==30) break;
+        }
+         console.log("Tổng các số chia hết cho 7 là :" + tong);
+     
+</script>
+
+</html>

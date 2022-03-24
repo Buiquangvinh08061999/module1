@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Thay đổi bóng kích vào ảnh và button (Nâng cao) -->
+    <img src="./imager/off.jpg" width="300px"  onclick="lightOn()">
+    <button onclick="lightOn()">Tunr on</button>
+   
+<script>
+    let lightOFF =true;
+    function lightOn(){
+        let img = document.getElementsByTagName("img")[0];
+        let buttonN =document.getElementsByTagName("button")[0];
+        if(lightOFF){
+            img.src ="./imager/on.jpg"
+            lightOFF = false
+            buttonN.innerHTML= "Tunr off"
+        }else{
+            img.src="./imager/off.jpg"
+            lightOFF = true;
+            buttonN.innerHTML= "Tunr on"
+        }
+    }
+
+
+  
+
+    
+</script>
+</body>
+</html>

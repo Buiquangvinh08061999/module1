@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+    <!-- Co 3 cach nhung javascrip vao HTML -->
+    
+
+
+    <!-- <button onmouseover="this.innerText= new Date()" onmouseout="this.innerText ='Value'">Value</button>
+    <br>
+    <button onmouseover="document.getElementsByTagName('p')[0].innerText= new Date()">
+        Value
+    </button>
+    <p></p>
+      -->
+
+    <!-- Hiển thị password ở Show password -->
+    <!-- <br>
+    PassWord <input type="password" onchange="document.getElementById('spw').value = this.value"> <br>
+    Show password <input type="text" id="spw">
+    <br><br><br> -->
+    
+
+
+    PassWord <input type="password" ><br>
+    
+<button onclick="demo()"> Kích vào </button>
+
+<script>
+    function demo(){
+        let inputT = document.getElementsByTagName("input")[0];
+        let buttonN = document.getElementsByTagName("button")[0];
+        if(inputT.type ==="password" ){
+            inputT.type= "text"
+            button.innerText= "Hipe pass"
+        }
+        else{
+            inputT.type ="password"
+            button.innerText= "show pass"
+        }
+    }
+</script>
+
+
+</body>
+
+</html>

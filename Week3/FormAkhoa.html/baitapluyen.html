@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Thay đổi bóng đèn khi kích vào button -->
+    <img src="./imager/off.jpg" width="300px" >
+    <button onclick="lightOn()"> Tunr On </button>
+    
+</body>
+
+<script>
+    let lightOFF = true;
+
+    function lightOn(){
+        let img =document.getElementsByTagName("img")[0]    
+        if(lightOFF){
+            img.src = "./imager/on.jpg"
+            lightOFF = false       
+        }else{
+            img.src = "./imager/off.jpg"
+            lightOFF = true
+           
+        }
+    }
+
+   
+
+
+</script>
+</html>

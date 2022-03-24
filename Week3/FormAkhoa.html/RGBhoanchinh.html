@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+   <style>
+        body{
+        /* Dùng các thuộc tính cốt lõi này để căn lề ra giữa */
+        margin: 0; padding: 0;
+        box-sizing: border-box;
+        place-items: center;
+        display: grid; 
+        height: 60vh;
+      }
+
+       #box{
+           font-size: 30px;
+           background-color: aqua;
+           text-align: center;
+           justify-items: center;
+           display: grid;
+
+       }
+   </style>
+</head>
+<body>
+    <div class="class" >
+      <div>  <input type="text" id="box" value="rgb(255,255,255)"></div>
+      <div> <p>Red:</p><input oninput="myColor()" type="range" id="red" min="0" max="255" > <p id="result"></p></div>
+      <div> <p>Green:</p> <input oninput="myColor()"  type="range" id="green" min="0" max="255"> <p id="result1"></p></div>
+      <div> <p>Blue:</p> <input oninput="myColor()" type="range" id="blue" min="0" max="255" > <p id="result2"></p></div>
+    </div>
+</body>
+<script>
+    function myColor(){
+        let red, green, blue , color;
+         red = document.getElementById('red').value;
+         green = document.getElementById('green').value;
+         blue = document.getElementById('blue').value;
+         color ='rgb('+red+','+green+','+blue+')';
+        // document.body.style.backgroundColor = color// Toàn body đổi màu;
+        document.getElementById('box').style.backgroundColor = color; // Chỉ có phông chữ id="box" hiển thị
+        document.getElementById('box').value = color;
+
+        document.getElementById("result").innerHTML =red
+        document.getElementById("result1").innerHTML =green
+        document.getElementById("result2").innerHTML =blue
+      
+    }
+
+    // Dùng cách này để gọi lại lệnh myColor.. hoặc dùng oninput="myColor"
+    // document.getElementById('red').addEventListener('input',myColor)
+    // document.getElementById('green').addEventListener('input',myColor)
+    // document.getElementById('blue').addEventListener('input',myColor)
+   
+</script>
+</html>
